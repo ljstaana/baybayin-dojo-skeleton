@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Baybayin-Dojo</title>
+        <meta charset="utf-8" />
+
+        <!--Stylesheet Dependencies-->
+        <link rel="stylesheet" href="src/css/skeleton.css"  type="text/css" /> 
+        <link rel="stylesheet/less" href="src/less/styles.less" type="text/css" />
+    </head>
+    <body> 
+        <div id="app">
+            <router-view></router-view>
+        </div>
+        
+        <!--Application Dependencies-->
+        <script>
+            window.app = {};
+            window.app.components = {};
+            window.symbol_list = [
+                "A", "E", "O", "Ei", "Ou",
+                "B", "K", "D", "G", "H",
+                "L", "M", "N", "n'", "R",
+                "S", "T", "W", "Y", "P"
+            ];
+
+        </script>
+        <script src="src/js/jquery.min.js"></script>
+        <script src="src/js/less.min.js"></script>
+        <script src="src/js/vault.min.js"></script>
+        <script src="src/js/vue.min.js"></script>
+        <script src="src/js/vuex.min.js"></script>
+        <script src="src/js/vue-router.min.js"></script>
+            <script src="src/js/chance.min.js"></script>
+        
+        <!--Component Dependencies-->
+        <script src="src/bus.js"></script>
+        <script src="src/components/SplashScreen.js"></script>
+        <script src="src/components/Dashboard.js"></script>
+        <script src="src/components/Gameplay.js"></script>
+        <script src="src/components/games/GameOne.js"></script>
+        <script src="src/components/games/GameTwo.js"></script>
+        <script src="src/components/games/GameOver.js"></script>
+        <script src="src/components/games/Congrats.js"></script>
+        <script src="src/components/games/CorrectAnswer.js"></script>
+        <script src="src/components/games/WrongAnswer.js"></script>
+
+
+        <!--Application Scripts-->
+        <script src="src/data.js"></script>
+        <script src="src/router.js"></script>
+        <script src="src/main.js"></script>
+    </body>
+</html>
